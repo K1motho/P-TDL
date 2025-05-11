@@ -1,0 +1,176 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 7px;
+    padding: 10px;
+    background-color: #F6E3D5; /* Soft Beige Background */
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(221, 207, 225, 0.3); /* Light Purple */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 100;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar .profile img {
+    width: 60px;
+    height: 70px;
+    border-radius: 45%; /* Makes it a perfect circle */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar .profile img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Container */
+.container {
+    padding-top: 70px; /* Adjust to avoid navbar overlap */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #6A4E9F; /* Light Purple */
+}
+
+header p {
+    font-size: 18px;
+    color: #7E4E96; /* Subtle Purple */
+}
+
+/* Task Section */
+.add-task {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-task input {
+    padding: 12px;
+    font-size: 16px;
+    margin-right: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #D5B8D1; /* Light Purple Border */
+    background-color: #FFF5FA; /* Light Pink Background */
+}
+
+.add-task button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #6A4E9F; /* Light Purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-task button:hover {
+    background-color: #9B66B0;
+}
+
+.image-upload {
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Styled Date Input */
+.styled-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #D5B8D1;
+    background-color: #FFF5FA; /* Light Pink Background */
+    margin-top: 10px;
+}
+
+.styled-input:focus {
+    outline: none;
+    border-color: #9B66B0; /* Romantic Purple Border on focus */
+}
+
+/* Task List */
+.task-list, .completed-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Completed Section */
+.completed-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.completed-section h2 {
+    color: #9B66B0; /* Romantic Purple */
+    font-size: 24px;
+}
+
+.completed-section button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #6A4E9F; /* Light Purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.completed-section button:hover {
+    background-color: #9B66B0;
+}
+
+/* Popups */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#countdown {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #6A4E9F; /* Light Purple */
+}

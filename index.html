@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Transparent Navbar -->
+    <nav class="navbar">
+        <a href="#">Tasks</a>
+        <a href="#">Completed</a>
+        <div class="profile">
+            <img src="WhatsApp Image 2025-05-11 at 20.16.15_495cbf7e.jpg" alt="Profile Image">
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h2> 💖🪣📋</h2>
+            <p>Wants </p>
+            <div class="timer-controls">
+                <label for="deadline">Set Deadline:</label>
+                <input type="datetime-local" id="deadline" class="styled-input"/>
+                <button id="start-timer">Confirm Date</button>
+                <div id="countdown"></div>
+            </div>
+        </header>
+        
+        <div class="add-task">
+            <input type="text" id="new-task" placeholder="What will we do today, love?">
+            <div class="image-upload">
+                <label for="task-image">
+                    <i class="fas fa-image"></i> Share a Memory
+                </label>
+                <input type="file" id="task-image" accept="image/*">
+            </div>
+            <button id="add-btn">Add Our Task</button>
+        </div>
+
+        <div class="task-list" id="task-list">
+            <!-- Tasks will appear here -->
+        </div>
+        
+        <div class="completed-section">
+            <h2><i class="fas fa-heart"></i> Our Completed Moments</h2>
+            <div class="completed-cards" id="completed-cards">
+                <!-- Completion cards will appear here -->
+            </div>
+            <button id="download-completed">Download Our Love Moments</button>
+        </div>
+    </div>
+
+    <!-- Popups -->
+    <div class="popup" id="encouragement-popup">
+        <div class="popup-content">
+            <p>You're amazing! You completed a task with love! Keep up the wonderful work ❤️</p>
+            <button id="close-popup">Let's Keep Going!</button>
+        </div>
+    </div>
+
+    <div class="popup" id="image-popup" style="display: none;">
+        <div class="popup-content">
+            <p>Please share a photo for this completed task:</p>
+            <input type="file" id="completed-task-image" accept="image/*">
+            <button id="confirm-image">Confirm Memory</button>
+        </div>
+    </div>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
